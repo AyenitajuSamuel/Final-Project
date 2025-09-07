@@ -2,7 +2,7 @@
 from sklearn.ensemble import VotingClassifier, StackingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, roc_auc_score
-from dataset import dataset
+import joblib
 
 # Import trained models from your existing scripts
 from rf_model import rf, X_train, X_test, y_train, y_test
@@ -27,4 +27,7 @@ y_prob = voting.predict_proba(X_test)[:, 1]
 print("\nSoft Voting Ensemble")
 print("ROC-AUC:", roc_auc_score(y_test, y_prob))
 print(classification_report(y_test, y_pred))
+
+joblib.dump(voting, "soft_voting_ensemble.pkl")
+print("Soft Voting Ensemble saved as soft_voting_ensemble.pkl")
 
