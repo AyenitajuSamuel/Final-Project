@@ -1,0 +1,21 @@
+Project Research:
+I. Introduction
+
+    Background and significance of CAD prediction
+    Statement of Problem
+    Aim and Objective of the study
+    Scope and limitations
+
+II. Literature Review
+
+    Current CAD prediction methods
+    Machine learning applications in cardiology
+    Previous studies using Cleveland/Statlog datasets
+    Limitations of existing approaches
+
+III. Methodology
+
+    Dataset description (Cleveland/Statlog)
+    Data preprocessing steps
+    Feature selection methodology
+    
