@@ -28,6 +28,6 @@ print("\nSoft Voting Ensemble")
 print("ROC-AUC:", roc_auc_score(y_test, y_prob))
 print(classification_report(y_test, y_pred))
 
-joblib.dump(voting, "soft_voting_ensemble.pkl")
+joblib.dump({"model": voting, "features": X_train.columns.tolist()}, "soft_voting_ensemble.pkl")
 print("Soft Voting Ensemble saved as soft_voting_ensemble.pkl")
 
