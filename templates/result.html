@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>CAD Risk Result</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h2>Prediction Result</h2>
     <p><b>Prediction:</b> {{ prediction }}</p>
-    <p><b>Probability of CAD:</b> {{ probability }}</p>
+    <p><b>Probability of CAD:</b> {{ probability * 100}}%</p>
     <br>
     <a href="/">Back to Input</a>
 </body>
